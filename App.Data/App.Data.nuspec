@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>App.Data</id>
+    <version>1.0.1</version>
+    <title>App.Data Nuget Package</title>
+    <authors>Kamal Jassal</authors>
+    <owners>Kamal Jassal</owners>
+    <licenseUrl>https://github.com/kamal-k-j/App.Data</licenseUrl>
+    <projectUrl>https://github.com/kamal-k-j/App.Data</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Database access utilities for working with NHibernate for .NET Core</description>
+    <releaseNotes>None</releaseNotes>
+    <dependencies>
+      <group targetFramework="netcoreapp3.1">
+        <dependency id="Autofac" version="4.9.4" />
+        <dependency id="FluentNHibernate" version="2.1.2" />
+        <dependency id="Serilog.AspNetCore" version="3.2.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\netcoreapp3.1\App.Data.dll" target="lib\netcoreapp3.1" />
+  </files>
+</package>

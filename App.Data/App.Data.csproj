@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Kamal Jassal</Authors>
+    <Company>Kamal Jassal</Company>
+    <PackageProjectUrl>https://github.com/kamal-k-j/App.Data</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kamal-k-j/App.Data</RepositoryUrl>
+    <RepositoryType>.NET Core class library</RepositoryType>
+    <Description>Database utilities for using NHibernate/Fluent NHibernate.</Description>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Replace IOptions&lt;T&gt; with IConfiguration
+This is due to the impossiblity to register the IOptions&lt;T&gt; module in the Startup</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="Iesi.Collections" Version="4.0.4" />
+    <PackageReference Include="NHibernate" Version="5.2.7" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
